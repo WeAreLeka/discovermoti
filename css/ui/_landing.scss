@@ -1,0 +1,162 @@
+/*------------------------------------*\
+LANDING-PAGE.CSS
+\*------------------------------------*/
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	color: #fff;
+}
+
+.site-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	text-align: center;
+	background-image: url('/img/still-1.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.site-wrapper-inner {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.cover-container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.inner {
+	padding: 30px;
+}
+
+.masthead-brand {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.masthead-nav > {
+	li {
+		display: inline-block;
+		+ li {
+			margin-left: 20px;
+		}
+		> a {
+			padding-right: 0;
+			padding-left: 0;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			color: rgba(255, 255, 255, 0.75);
+			border-bottom: 2px solid transparent;
+			&:hover, &:focus {
+				background-color: transparent;
+				border-bottom-color: rgba(255, 255, 255, 0.25);
+			}
+		}
+	}
+	.active > a {
+		color: #fff;
+		border-bottom-color: #fff;
+		&:hover, &:focus {
+			color: #fff;
+			border-bottom-color: #fff;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.masthead-brand {
+		float: left;
+	}
+	.masthead-nav {
+		float: right;
+	}
+}
+
+.cover {
+	padding: 0 20px;
+	text-shadow: 1px 1px 0 #000;
+	.logo-front {
+		display: block;
+		margin: 0 auto;
+		width: 250px;
+	}
+
+	.cover-heading {
+		font-weight: 300;
+	}
+	.btn {
+		margin: 10px 10px;
+		width: 250px;
+		color: #FFF;
+		font-weight: 300;
+	}
+
+	.btn--primary {
+		background-color: $green;
+		&:hover {
+			background-color: lighten($green, 10%);
+		}
+	}
+
+	.btn--secondary {
+		background-color: $blue;
+		&:hover {
+			background-color: lighten($blue, 10%);
+		}
+	}
+}
+
+.mastfoot {
+	color: rgba(255, 255, 255, 1);
+	font-weight: 300;
+	word-spacing: 1px;
+
+	.mastfoot-links {
+		i {
+			margin: 0 10px 0 10px;
+		}
+	}
+
+}
+
+@media (min-width: 992px) {
+	/* Pull out the header and footer */
+	.masthead {
+		position: fixed;
+		top: 0;
+	}
+	.mastfoot {
+		position: fixed;
+		bottom: 0;
+	}
+	/* Start the vertical centering */
+	.site-wrapper-inner {
+		vertical-align: middle;
+	}
+	/* Handle the widths */
+	.masthead, .mastfoot, .cover-container {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.masthead, .mastfoot, .cover-container {
+		width: 700px;
+	}
+}
+
+.logo-nav {
+	position: relative;
+	height: 40px;
+	width: auto;
+}
+
