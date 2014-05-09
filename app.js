@@ -44,7 +44,12 @@ app.configure('development', function(){
 // Set Routes
 app.get('/', routes.index);
 app.get('/:lang', routes.index);
-
+app.get('/:lang/moti', routes.moti);
+app.get('/:lang/faq', routes.faq);
+app.get('/:lang/preorder', routes.preorder);
+app.get('/:lang/contact', routes.contact);
+//
+// Create server and listen on port 3000
 http.createServer(app).listen(app.get('port'), function(){
 	console.log("Express server listening on port " + app.get('port'));
 });
