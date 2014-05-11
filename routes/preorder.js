@@ -9,7 +9,6 @@ var siteData = require('site.json');
 exports.preorderRoute = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
-			"layout": "landing.hbs",
 			"title": "Pre-order",
 			"lang": "en",
 			"description": "",
