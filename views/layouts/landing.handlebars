@@ -1,0 +1,49 @@
+
+{{> site/head }}
+
+	<body>
+
+		<!-- <div id="landing&#45;background"></div> -->
+
+		<div class="site-wrapper">
+
+			<div class="site-wrapper-inner">
+
+				<div class="cover-container">
+
+					{{> pages/navbar }}
+
+					{{{ body }}}
+
+					{{> site/footer }}
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="vid">
+
+			<div class="vid-fade"></div>
+
+			<div id="video-container">
+
+				<video id="splash" class="vid-bg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+					<source src="{{ site._vid-moti }}" type="video/mp4"></source>
+					Your browser does not support the video tag. We suggest you upgrade your browser to <a href="https://www.google.com/intl/en/chrome/browser/">Google Chrome</a>.
+
+				</video> <!-- splash -->
+
+			</div> <!-- video-container -->
+
+		</div> <!-- vid -->
+
+		<!-- jQuery -->
+		{{> site/analytics }}
+		{{> site/jquery-js }}
+		{{> pages/vid-js }}
+
+	</body>
+
+</html>
