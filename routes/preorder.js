@@ -9,6 +9,7 @@ var siteData = require('site.json');
 exports.preorderRoute = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
+			"layout": "main",
 			"title": "Pre-order",
 			"lang": "en",
 			"description": "",
@@ -18,7 +19,7 @@ exports.preorderRoute = function(req, res){
 	}
 	else {
 		var pageData = {
-			"layout": "landing.hbs",
+			"layout": "main",
 			"title": "Précommander Moti",
 			"lang": "fr",
 			"description": "",

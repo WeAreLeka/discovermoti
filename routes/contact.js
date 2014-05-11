@@ -9,7 +9,7 @@ var siteData = require('site.json');
 exports.contactRoute = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
-			"layout": "landing.hbs",
+			"layout": "main",
 			"title": "Contact us",
 			"lang": "en",
 			"description": "",
@@ -19,7 +19,7 @@ exports.contactRoute = function(req, res){
 	}
 	else {
 		var pageData = {
-			"layout": "landing.hbs",
+			"layout": "main",
 			"title": "Contactez-nous",
 			"lang": "fr",
 			"description": "",

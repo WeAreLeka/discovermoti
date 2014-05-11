@@ -9,7 +9,7 @@ var siteData = require('site.json');
 exports.faqRoute = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
-			"layout": "landing.hbs",
+			"layout": "main",
 			"title": "FAQ",
 			"lang": "en",
 			"description": "",
@@ -19,7 +19,7 @@ exports.faqRoute = function(req, res){
 	}
 	else {
 		var pageData = {
-			"layout": "landing.hbs",
+			"layout": "main",
 			"title": "FAQ",
 			"lang": "fr",
 			"description": "",

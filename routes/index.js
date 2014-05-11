@@ -15,7 +15,7 @@ var contact = require('routes/contact');
 exports.landing = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
-			"layout": "landing.hbs",
+			"layout": "landing",
 			"title": "Welcome!",
 			"lang": "en",
 			"description": "",
@@ -25,7 +25,7 @@ exports.landing = function(req, res){
 	}
 	else {
 		var pageData = {
-			"layout": "landing.hbs",
+			"layout": "landing",
 			"title": "Welcome!",
 			"lang": "fr",
 			"description": "",
