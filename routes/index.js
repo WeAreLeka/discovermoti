@@ -31,6 +31,7 @@ exports.landing = function(req, res){
 			"description": "",
 			"keywords": ""
 		};
+		req.params.lang = "fr";
 	}
 
 	var helper = _.extend(siteData, pageData);
