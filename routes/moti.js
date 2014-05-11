@@ -6,7 +6,7 @@
 var _ = require('underscore');
 var siteData = require('site.json');
 
-exports.moti = function(req, res){
+exports.motiRoute = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
 			"layout": "landing.hbs",

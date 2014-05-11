@@ -6,7 +6,7 @@
 var _ = require('underscore');
 var siteData = require('site.json');
 
-exports.contact = function(req, res){
+exports.contactRoute = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
 			"layout": "landing.hbs",

@@ -42,8 +42,8 @@ app.configure('development', function(){
 });
 
 // Set Routes
-app.get('/', routes.index);
-app.get('/:lang', routes.index);
+app.get('/', routes.landing);
+app.get('/:lang', routes.landing);
 app.get('/:lang/moti', routes.moti);
 app.get('/:lang/faq', routes.faq);
 app.get('/:lang/preorder', routes.preorder);
