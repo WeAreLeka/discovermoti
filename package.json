@@ -6,8 +6,13 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "~3.3.4",
+    "express": "^3.3.8",
     "express3-handlebars": "*",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-develop": "^0.2.2",
+    "load-grunt-tasks": "^0.2.1",
+    "request": "^2.27.0",
+    "time-grunt": "^0.1.2",
     "underscore": "^1.6.0"
   },
   "devDependencies": {
