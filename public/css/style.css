@@ -5852,15 +5852,6 @@ VIDEO.CSS
 /*------------------------------------*\
 LANDING-PAGE.CSS
 \*------------------------------------*/
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  color: #fff;
-}
-
 #landing-background {
   position: fixed;
   z-index: -100;
@@ -5880,33 +5871,45 @@ body {
   min-height: 100%;
   text-align: center;
 }
-
-.site-wrapper-inner {
+.site-wrapper .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
 }
-
-.cover-container {
+.site-wrapper .cover-container {
   margin-right: auto;
   margin-left: auto;
 }
-
-.inner {
+.site-wrapper .header {
   padding: 30px;
+  color: #fff;
 }
 
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.masthead-brand .logo-nav {
+  position: relative;
+  height: 40px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+}
 
-.masthead-nav > li {
+@media (min-width: 768px) {
+  .masthead-nav {
+    float: right;
+  }
+}
+.masthead-nav li {
   display: inline-block;
 }
-.masthead-nav > li + li {
+.masthead-nav li + li {
   margin-left: 20px;
 }
-.masthead-nav > li > a {
+.masthead-nav li > a {
   padding-right: 0;
   padding-left: 0;
   font-size: 16px;
@@ -5915,34 +5918,25 @@ body {
   color: rgba(255, 255, 255, 0.75);
   border-bottom: 2px solid transparent;
 }
-.masthead-nav > li > a:hover, .masthead-nav > li > a:focus {
+.masthead-nav li > a:hover, .masthead-nav li > a:focus {
   background-color: transparent;
   border-bottom-color: rgba(255, 255, 255, 0.25);
 }
-.masthead-nav > .active > a {
+.masthead-nav .active > a {
   color: #fff;
   border-bottom-color: #fff;
 }
-.masthead-nav > .active > a:hover, .masthead-nav > .active > a:focus {
+.masthead-nav .active > a:hover, .masthead-nav .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-
-  .masthead-nav {
-    float: right;
-  }
-}
 .cover {
-  padding: 0 20px;
+  color: #fff;
+  vertical-align: middle;
 }
 .cover .logo-front {
-  display: block;
-  margin: 0 auto;
+  display: inline;
   width: 250px;
 }
 .cover .cover-heading {
@@ -5966,14 +5960,15 @@ body {
 .cover .btn--secondary:hover {
   background-color: #7fc1de;
 }
-
-.mastfoot {
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: 300;
-  word-spacing: 1px;
+@media (min-width: 768px) {
+  .cover {
+    margin-top: 100px;
+  }
 }
-.mastfoot .mastfoot-links i {
-  margin: 0 10px 0 10px;
+@media (min-width: 992px) {
+  .cover {
+    margin-top: 150px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -5983,32 +5978,39 @@ body {
     top: 0;
   }
 
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
-
-  /* Handle the widths */
-  .masthead, .mastfoot, .cover-container {
-    width: 100%;
-  }
 }
 @media (min-width: 992px) {
-  .masthead, .mastfoot, .cover-container {
+  .masthead, .cover-container {
     width: 700px;
   }
 }
-.logo-nav {
+/*------------------------------------*\
+FOOTER.CSS
+\*------------------------------------*/
+html {
   position: relative;
-  height: 40px;
-  width: auto;
+  min-height: 100%;
 }
 
-/*------------------------------------*\
-LAYOUT.CSS
-\*------------------------------------*/
+body {
+  margin-bottom: 100px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  color: rgba(50, 50, 50, 0.6);
+  text-align: center;
+}
+#footer .container {
+  padding: 10px 0px 10px 0px;
+}
+#footer .footer-links i {
+  margin: 0 10px 0 10px;
+}
