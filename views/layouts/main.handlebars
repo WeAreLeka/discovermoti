@@ -1,32 +1,22 @@
 
 {{> site/head }}
 
-	<body>
+<body>
 
-		<div class="site-wrapper">
+	{{> site/navbar }}
 
-			<div class="site-wrapper-inner">
+	<div class="container">
+		
+		{{{ body }}}
+	
+	</div>
 
-				<div class="cover-container">
+	{{> site/footer }}
 
-					{{> pages/navbar }}
+	<!-- jQuery -->
+	{{> site/analytics }}
+	{{> site/jquery-js }}
 
-					{{{ body }}}
-
-					{{> site/footer }}
-
-				</div>
-
-			</div>
-
-		</div>
-	</div> <!-- vid -->
-
-		<!-- jQuery -->
-		{{> site/analytics }}
-		{{> site/jquery-js }}
-		{{> pages/vid-js }}
-
-	</body>
+</body>
 
 </html>
