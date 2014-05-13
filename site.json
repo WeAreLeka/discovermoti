@@ -9,7 +9,11 @@
 		"_vid-moti": "/vid/-big.mp4"
 	},
 	"nav": {
-		"en": ["Moti", "FAQ", "Pre-order", "Contact"],
-		"fr": ["Moti", "FAQ", "Précommande", "Contact"]
+		"content": {
+			"en": ["Moti", "FAQ", "Pre-order", "Contact"],
+			"fr": ["Moti", "FAQ", "Précommande", "Contact"]
+		},
+		"link": ["moti", "faq", "preorder", "contact"]
+		}
 	}
 }
