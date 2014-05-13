@@ -7,5 +7,9 @@
 		"_css": "/css",
 		"_img": "/img",
 		"_vid-moti": "/vid/-big.mp4"
+	},
+	"nav": {
+		"en": ["Moti", "FAQ", "Pre-order", "Contact"],
+		"fr": ["Moti", "FAQ", "Précommande", "Contact"]
 	}
 }
