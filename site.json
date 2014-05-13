@@ -1,19 +1,33 @@
 {
-	"site": {
-		"_title": "Discover Moti",
-		"_authors": "Ladislas de Toldi",
-		"_assets": "/",
-		"_js": "/js",
-		"_css": "/css",
-		"_img": "/img",
-		"_vid-moti": "/vid/-big.mp4"
-	},
-	"nav": {
-		"content": {
-			"en": ["Moti", "FAQ", "Pre-order", "Contact"],
-			"fr": ["Moti", "FAQ", "Précommande", "Contact"]
-		},
-		"link": ["moti", "faq", "preorder", "contact"]
-		}
-	}
+    "nav": {
+        "content": {
+            "en": [
+                "Moti",
+                "FAQ",
+                "Pre-order",
+                "Contact"
+            ],
+            "fr": [
+                "Moti",
+                "FAQ",
+                "Pr\u00e9commande",
+                "Contact"
+            ]
+        },
+        "link": [
+            "moti",
+            "faq",
+            "preorder",
+            "contact"
+        ]
+    },
+    "site": {
+        "_assets": "/",
+        "_authors": "Ladislas de Toldi",
+        "_css": "/css",
+        "_img": "/img",
+        "_js": "/js",
+        "_title": "Discover Moti",
+        "_vid-moti": "/vid/-big.mp4"
+    }
 }
