@@ -6071,8 +6071,8 @@ LANDING-PAGE.CSS
 }
 
 .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 .masthead-brand .logo-nav {
   position: relative;
@@ -6196,25 +6196,11 @@ FOOTER.CSS
 COLORS.CSS
 \*------------------------------------*/
 .navbar {
-  height: 80px;
+  height: 40px;
   margin-bottom: 20px;
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.6);
   border-color: transparent;
-}
-
-.navbar-nav {
-  margin-top: 10px;
-}
-
-.navbar-brand {
-  padding: 0;
-}
-
-.logo-navbar {
-  height: 80px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 /*------------------------------------*\
