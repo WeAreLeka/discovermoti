@@ -1,0 +1,26 @@
+{
+  "name": "discovermoti",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "underscore": "~1.6.0",
+
+    "express3-handlebars": "*",
+
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-develop": "~0.2.2",
+    "load-grunt-tasks": "~0.2.1",
+    "request": "~2.27.0",
+    "time-grunt": "~0.1.2"
+  }
+}

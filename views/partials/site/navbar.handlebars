@@ -1,0 +1,48 @@
+<header>
+	<div class="container">
+		<div class="navbar navbar-default" role="navigation">
+
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+
+					</button>
+
+					<a class="navbar-brand" href="/{{ lang }}"><img src="{{ site._img }}/logo-moti.svg" alt="Leka Logo" class="logo-navbar">Moti</a>
+
+				</div>
+
+				<div class="navbar-collapse collapse">
+
+					<ul class="nav navbar-nav navbar-right">
+
+						{{#if en}}
+						{{#each nav.en}}
+						<li><a href="/{{ ../../lang }}/{{ this.link }}">{{ this.name }}</a></li>
+						{{/each}}
+						{{/if}}
+
+						{{#if fr}}
+						{{#each nav.fr}}
+						<li><a href="/{{ ../../lang }}/{{ this.link }}">{{ this.name }}</a></li>
+						{{/each}}
+						{{/if}}
+
+					</ul>
+
+				</div><!--/.nav-collapse -->
+
+			</div><!--/.container-fluid -->
+
+		</div>
+
+
+	</div>
+</header>

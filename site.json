@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "fr": {
+      "home": { "link": "", "name": "Home" },
+      "moti": { "link": "moti", "name": "Moti" },
+      "faq": { "link": "faq", "name": "FAQ" },
+      "preorder": { "link": "preorder", "name": "Précommande" },
+      "contact": { "link": "contact", "name": "Contact" }
+    },
+    "en": {
+      "home": { "link": "", "name": "Home" },
+      "moti": { "link": "moti", "name": "Moti" },
+      "faq": { "link": "faq", "name": "FAQ" },
+      "preorder": { "link": "preorder", "name": "Pre-order" },
+      "contact": { "link": "contact", "name": "Conact" }
+    }
+  },
+  "site": {
+    "_assets": "/",
+    "_authors": "Ladislas de Toldi",
+    "_css": "/css",
+    "_img": "/img",
+    "_js": "/js",
+    "_title": "Discover Moti",
+    "_vid-moti": "/vid/-big.mp4"
+  }
+}
