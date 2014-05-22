@@ -12,7 +12,7 @@
       "moti": { "link": "moti", "name": "Moti" },
       "faq": { "link": "faq", "name": "FAQ" },
       "preorder": { "link": "preorder", "name": "Pre-order" },
-      "contact": { "link": "contact", "name": "Conact" }
+      "contact": { "link": "contact", "name": "Contact" }
     }
   },
   "site": {
