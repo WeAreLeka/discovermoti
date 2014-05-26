@@ -8,9 +8,7 @@ var siteData = require('../site.json');
 
 // Set routes
 var moti = require('../routes/moti');
-var faq = require('../routes/faq');
 var preorder = require('../routes/preorder');
-var contact = require('../routes/contact');
 
 exports.landing = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
@@ -41,10 +39,9 @@ exports.landing = function(req, res){
 	}
 
 	var helper = _.extend(siteData, pageData);
-	res.render('index-' + req.params.lang, helper);
+	res.render('index', helper);
+	console.log(site._js);
 };
 
 exports.moti = moti.motiRoute;
-exports.faq = faq.faqRoute;
-exports.contact = contact.contactRoute;
 exports.preorder = preorder.preorderRoute;

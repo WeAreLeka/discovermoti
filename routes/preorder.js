@@ -34,6 +34,6 @@ exports.preorderRoute = function(req, res){
 	}
 
 	var helper = _.extend(siteData, pageData);
-	res.render('preorder-' + req.params.lang, helper);
+	res.render('preorder', helper);
 };
 

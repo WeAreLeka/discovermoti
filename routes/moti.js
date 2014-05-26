@@ -34,6 +34,6 @@ exports.motiRoute = function(req, res){
 	}
 
 	var helper = _.extend(siteData, pageData);
-	res.render('moti-' + req.params.lang, helper);
+	res.render('moti', helper);
 };
 

@@ -45,11 +45,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Set routes
 app.get('/', routes.landing);
 app.get('/:lang', routes.landing);
-app.get('/:lang/moti', routes.moti);
-app.get('/:lang/faq', routes.faq);
-app.get('/:lang/preorder', routes.preorder);
-app.get('/:lang/contact', routes.contact);
-
+// app.get('/:lang/moti', routes.moti);
+// app.get('/:lang/faq', routes.faq);
+// app.get('/:lang/preorder', routes.preorder);
+// app.get('/:lang/contact', routes.contact);
+//
 // app.use('/', routes);
 // app.use('/users', users);
 
