@@ -1,13 +1,27 @@
-// $(function(){
-//
-// 	var url = window.location.pathname;
-// 	var activePage = url;
-//
-// 	$('.navbar-nav li a').each(function(){
-// 		var href = $(this).attr('href');
-// 		if (activePage === href) {
-// 			$('#home').removeClass('active');
-// 			$(this).parent().addClass('active');
-// 		}
-// 	});
-// });
+<script>
+	jQuery(document).ready(function () {
+
+		var vidUrl = $("#splash > source").attr('src');
+
+		// make sure the video is avalaible and if not, hide the video element to avoid black screen
+		$.get(vidUrl).fail(function() {
+			$("#splash").hide();
+		});
+
+		// get video width and height
+		$("#splash").on("loadedmetadata", function () {
+			$("#splash").css('visibility', 'visible');
+			centerVid();
+		});
+
+		//functions declarations
+		function centerVid() {
+			$("#splash").css('right', (($(window).width()/2) - ($("#splash").width()/2)));
+		}
+
+		// update the video size and position on resize.
+		$(window).resize(function() {
+			centerVid();
+		});
+	});
+</script>

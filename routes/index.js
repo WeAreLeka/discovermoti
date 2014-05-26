@@ -13,7 +13,7 @@ var preorder = require('../routes/preorder');
 exports.landing = function(req, res){
 	if (req.params.lang == "en" || req.params.lang == null) {
 		var pageData = {
-			"layout": "landing",
+			"layout": "main",
 			"title": "Welcome!",
 			"link": "",
 			"lang": "en",
@@ -26,7 +26,7 @@ exports.landing = function(req, res){
 	}
 	else {
 		var pageData = {
-			"layout": "landing",
+			"layout": "main",
 			"title": "Welcome!",
 			"link": "",
 			"lang": "fr",
