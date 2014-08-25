@@ -1,55 +1,28 @@
 <header>
-	<div class="container">
-		<div class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Leka</a>
+			</div>
 
-			<div class="container-fluid">
-
-				<div class="navbar-header">
-
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-
-					</button>
-
-					<h3 class="masthead-brand"><a href="http://weareleka.com"><img src="{{ site._img }}/logo-leka.svg" alt="Leka Logo" class="logo-nav"></a></h3>
-
-				</div>
-
-				<div class="navbar-collapse collapse">
-
-					<ul class="nav navbar-nav navbar-right">
-
-						{{#if en}}
-						{{#each nav.en}}
-						<li><a href="/{{ ../../lang }}/{{ this.link }}">{{ this.name }}</a></li>
-						{{/each}}
-						{{/if}}
-
-						{{#if fr}}
-						{{#each nav.fr}}
-						<li><a href="/{{ ../../lang }}/{{ this.link }}">{{ this.name }}</a></li>
-						{{/each}}
-						{{/if}}
-
-					</ul>
-
-				</div><!--/.nav-collapse -->
-
-			</div><!--/.container-fluid -->
-		</div>
-
-	</div>
-
-	<div class="punchline-container center-block">
-		<div class="punchline-content">
-			somme text
-			<h1 class="punchline">Dive deep into Moti</h1>
-		</div>
-	</div>
-
-
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Moti</a></li>
+					<li><a href="#">How to use</a></li>
+					<li><a href="#">Deep dive</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Pre-order</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
 </header>

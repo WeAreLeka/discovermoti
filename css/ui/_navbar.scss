@@ -2,30 +2,3 @@
 NAVBAR.CSS
 \*------------------------------------*/
 
-.navbar {
-	height: 40px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	background-color: rgba(255, 255, 255, 0.6);
-	border-color: rgba(0, 0, 0, 0);
-
-	.active {
-		background-color: #000;
-	}
-}
-header {
-	height: 700px;
-	background-image: url(/img/still-1.png);
-	background-position: cover;
-	background-repeat: no-repeat;
-}
-.punchline-container {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-
-	.punchline-content {
-		display: inline-block;
-		text-align: center;
-	}
-}

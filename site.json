@@ -1,20 +1,4 @@
 {
-  "nav": {
-    "fr": {
-      "home": { "link": "", "name": "Home" },
-      "moti": { "link": "moti", "name": "Moti" },
-      "faq": { "link": "faq", "name": "FAQ" },
-      "preorder": { "link": "preorder", "name": "Précommande" },
-      "contact": { "link": "contact", "name": "Contact" }
-    },
-    "en": {
-      "home": { "link": "", "name": "Home" },
-      "moti": { "link": "moti", "name": "Moti" },
-      "faq": { "link": "faq", "name": "FAQ" },
-      "preorder": { "link": "preorder", "name": "Pre-order" },
-      "contact": { "link": "contact", "name": "Contact" }
-    }
-  },
   "site": {
     "_assets": "/",
     "_authors": "Ladislas de Toldi",
@@ -23,5 +7,11 @@
     "_js": "/js",
     "_title": "Discover Moti",
     "_vid-moti": "/vid/-big.mp4"
+  },
+  "nav": {
+    "en": ["Home", "Moti", "Examples", "Deep Dive", "FAQ", "Pre-order"],
+    "fr": ["Home", "Moti", "Examples", "A l'intérieur", "FAQ", "Précommande"],
+    "link": ["", "#moti", "#examples", "#deepdive", "#faq", "#preorder"],
+    "en2": [{ "value": ""}, { "value": "#moti" }, { "value": "#examples" }, { "value": "#deepdive" }, { "value": "#faq" }, { "value": "#preorder" }]
   }
 }
