@@ -922,7 +922,7 @@ header.navigation {
         float: left;
         margin-bottom: 0; } }
   .footer-2 .footer-logo img {
-    height: 1.6em; }
+    height: 2.6em; }
   .footer-2 ul {
     margin-bottom: 1em; }
     @media screen and (min-width: 53.75em) {
@@ -930,7 +930,8 @@ header.navigation {
         float: left;
         line-height: 1.8em;
         margin-left: 1em;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        padding-top: 0.5em; } }
   .footer-2 ul li {
     font-weight: 800;
     padding-right: 1em; }
