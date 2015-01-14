@@ -13,6 +13,16 @@ $(document).ready(function() {
 	});
 });
 
+// jQuery to collapse the navbar on scroll
+var bottom = $('.hero').offset().top;
+$(window).scroll(function () {
+	if ($(this).scrollTop() > bottom) {
+		$('.navigation').addClass('navigation-collapse');
+	} else {
+		$('.navigation').removeClass('navigation-collapse');
+	}
+});
+
 // Google maps
 var bittersMap = (function () {
 	var myLatlng = new google.maps.LatLng(48.845695,2.328334),
@@ -66,12 +76,3 @@ var bittersMap = (function () {
 }());
 bittersMap.init();
 
-// Navbar
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 40) {
-        $( ".navigation" ).fadeIn();
-    } else {
-        console.log('there');
-        $( ".navigation" ).fadeOut();
-    }
-});

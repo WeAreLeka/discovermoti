@@ -1,5 +1,4 @@
 header.navigation {
-	position: fixed;
 	$base-border-color: gainsboro !default;
 	$base-border-radius: 3px !default;
 	$base-accent-color: #477DCA !default;
@@ -11,7 +10,7 @@ header.navigation {
 	}
 
 	$navigation-padding: 1em;
-	$navigation-background: rgb(0,0,0);
+	$navigation-background: transparent;
 	$navigation-color: transparentize(white, 0.3);
 	$navigation-color-hover: white;
 	$navigation-height: 90px;
@@ -29,7 +28,12 @@ header.navigation {
 	border-bottom: 1px solid darken($navigation-background, 10);
 	min-height: $navigation-height;
 	width: 100%;
+
+	position: fixed;
 	z-index: 999;
+
+	@include transition(all 0.5s ease);
+
 
 	.navigation-wrapper {
 		@include clearfix;
@@ -143,30 +147,10 @@ header.navigation {
 		border-bottom: 1px solid $navigation-active-link-color;
 		padding-bottom: 3px;
 	}
-	// Elements on the far right
-
-	.navigation-tools {
-		background: #505050;
-		clear: both;
-		display: block;
-		height: $navigation-height;
-		padding-left: $navigation-padding / 2;
-		padding-right: $navigation-padding;
-
-		@include media($large-screen) {
-			background: transparent;
-			clear: none;
-			float: right;
-		}
-	}
-
-	.sign-up {
-		@include button(flat, $base-accent-color);
-		display: inline;
-		float: right;
-		font-size: 0.8em;
-		margin-top: 1em;
-		padding: 0.75em 1em;
-		text-transform: uppercase;
-	}
 }
+
+header.navigation-collapse {
+	padding: 0;
+	background-color: black;
+}
+
