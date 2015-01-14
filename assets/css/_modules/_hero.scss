@@ -1,0 +1,66 @@
+
+.hero {
+	///////////////////////////////////////////////////////////////////////////////////
+	$base-border-radius: 3px !default;
+	$base-accent-color: #477DCA !default;
+	$large-screen: em(860) !default;
+	//////////////////////////////////////////////////////////////////////////////////
+
+	$hero-background-top: #7F99BE;
+	$hero-background-bottom: #20392B;
+	$hero-color: $lblue;
+	$gradient-angle: 10deg;
+	$hero-image: 'https://www.dropbox.com/s/kspqpoyjveh0xgs/Moti.jpg?raw=1';
+
+	@include background-image(url($hero-image));
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include vertical-horizontal-centering();
+	padding-bottom: 3em;
+	height: 100%;
+
+	.hero-logo img {
+		height: 8em;
+		margin-bottom: 1em;
+	}
+
+	.hero-inner {
+		@include outer-container;
+		@include clearfix;
+		color: $hero-color;
+		margin: auto;
+		padding: 3.5em;
+		text-align: center;
+
+		.hero-copy {
+			text-align: center;
+
+			h1 {
+				font-size: 1.6em;
+				margin-bottom: 0.5em;
+
+				@include media($large-screen) {
+					font-size: 1.8em;
+				}
+			}
+
+			p {
+				font-weight: 200;
+				line-height: 1.4em;
+				margin: 0 auto 3em auto;
+
+				@include media($large-screen) {
+					font-size: 1.1em;
+					max-width: 40%;
+				}
+			}
+		}
+
+		button {
+			@include button(flat, $base-accent-color);
+			padding: 0.7em 1em;
+		}
+	}
+}
