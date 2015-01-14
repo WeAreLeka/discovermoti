@@ -3,3 +3,10 @@ npm-debug.log
 *node_modules*
 *.sass-cache*
 ..scss
+# joe made this: https://goel.io/joe
+
+#####=== Sass ===#####
+
+.sass-cache
+*.css.map
+
