@@ -27,3 +27,9 @@ $moti-logo: 'https://www.dropbox.com/s/q4g1vw8qgkuc62d/Logo_Moti-09.png?raw=1';
 	@include prefixer(justify-content, center, webkit spec);
 
 }
+
+@mixin nice-shadow() {
+
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+
+}
