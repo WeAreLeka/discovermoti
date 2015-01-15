@@ -693,56 +693,13 @@ input[type="submit"] {
   background-color: #333;
   padding: 0px; }
 
-.sliding-menu-button {
-  background-color: #7b7b7b;
-  border-radius: 3px;
-  border: none;
-  color: white;
-  display: inline-block;
-  font-size: inherit;
-  font-weight: bold;
-  padding: 7px 18px;
-  text-decoration: none;
-  background-clip: padding-box;
-  background-color: #7b7b7b;
-  border-radius: 3px;
-  border: none;
-  color: white;
-  display: inline-block;
-  font-size: inherit;
-  font-weight: bold;
-  padding: 7px 18px;
-  text-decoration: none;
-  background-clip: padding-box;
-  padding: 10px 16px;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  outline: none; }
-  .sliding-menu-button:hover:not(:disabled) {
-    background-color: #888888;
-    cursor: pointer; }
-  .sliding-menu-button:active:not(:disabled), .sliding-menu-button:focus:not(:disabled) {
-    background-color: #6e6e6e;
-    cursor: pointer; }
-  .sliding-menu-button:hover:not(:disabled) {
-    background-color: #8d8383;
-    cursor: pointer; }
-  .sliding-menu-button:active:not(:disabled), .sliding-menu-button:focus:not(:disabled) {
-    background-color: #6e6e6e;
-    cursor: pointer; }
-  .sliding-menu-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed; }
-  .sliding-menu-button img {
-    height: 1.3em; }
-
 .hero {
-  background-image: url("/assets/img/moti/Moti-day.jpg");
-  background-image: url("/assets/img/moti/Moti-day.jpg");
+  background-image: url("/img/moti/Moti-day.jpg");
+  background-image: url("/img/moti/Moti-day.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -871,90 +828,43 @@ input[type="submit"] {
       width: 100%; }
 
 .footer {
-  background: #40526b;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-image: url("/img/moti/Moti-day.jpg");
+  background-image: url("/img/moti/Moti-day.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 1.5em;
   width: 100%;
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.4); }
-  .footer ul {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5em; }
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center; }
   .footer li {
     list-style: none; }
   .footer a {
-    text-decoration: none; }
-  .footer .footer-love-letters {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-box-align: center;
-    box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center; }
-  .footer .footer-logo {
-    margin-right: 1em;
-    margin-bottom: 1em; }
-    @media screen and (min-width: 53.75em) {
-      .footer .footer-logo {
-        float: left;
-        margin-bottom: 0; } }
-  .footer .footer-logo img {
-    height: 2.6em; }
-  .footer ul {
-    margin-bottom: 1em; }
-    @media screen and (min-width: 53.75em) {
-      .footer ul {
-        float: left;
-        line-height: 1.8em;
-        margin-left: 1em;
-        margin-bottom: 0;
-        padding-top: 0.5em; } }
-  .footer ul li {
-    font-weight: 800;
-    padding-right: 1em; }
-    @media screen and (min-width: 53.75em) {
-      .footer ul li {
-        display: inline;
-        text-align: left; } }
-  .footer ul li a {
-    color: rgba(255, 255, 255, 0.4); }
-    .footer ul li a:hover {
-      color: white; }
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4); }
+    .footer a:hover {
+      color: black; }
   @media screen and (min-width: 53.75em) {
-    .footer .footer-secondary-links {
-      float: right; } }
-  .footer .footer-secondary-links li {
-    font-size: 0.8em;
-    font-weight: 400; }
-  .footer .footer-secondary-links ul.footer-social {
-    margin-top: 1em; }
-    @media screen and (min-width: 53.75em) {
-      .footer .footer-secondary-links ul.footer-social {
-        float: right;
-        margin-top: 0; } }
-    .footer .footer-secondary-links ul.footer-social li {
-      font-size: 1em;
+    .footer ul {
       float: left;
-      line-height: 0;
-      padding-right: 0.7em; }
-      .footer .footer-secondary-links ul.footer-social li:last-child {
-        padding-right: 0; }
-    .footer .footer-secondary-links ul.footer-social img {
-      height: 1.6em;
-      opacity: 0.7;
-      padding: 1px; }
-      .footer .footer-secondary-links ul.footer-social img:hover {
-        opacity: 1; }
+      line-height: 1.8em; } }
 
 /*# sourceMappingURL=main.css.map */

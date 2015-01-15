@@ -1,21 +1,20 @@
 
 .hero {
-	///////////////////////////////////////////////////////////////////////////////////
 	$base-border-radius: 3px !default;
 	$base-accent-color: #477DCA !default;
 	$large-screen: em(860) !default;
-	//////////////////////////////////////////////////////////////////////////////////
 
 	$hero-background-top: #7F99BE;
 	$hero-background-bottom: #20392B;
 	$hero-color: white;
 	$gradient-angle: 10deg;
-	$hero-image: '/assets/img/moti/Moti-day.jpg';
+	$hero-image: '/img/moti/Moti-day.jpg';
 
 	@include background-image(url($hero-image));
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 
 	@include vertical-horizontal-centering();
 	padding-bottom: 3em;
