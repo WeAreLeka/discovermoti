@@ -935,6 +935,209 @@ input[type="submit"] {
   color: white;
   text-align: center; }
 
+.modal h1 {
+  margin: 0; }
+.modal p {
+  color: #333;
+  line-height: 1.5; }
+.modal label {
+  display: inline;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: 200; }
+.modal label img {
+  border-radius: 150px;
+  max-width: 300px; }
+.modal input[type="checkbox"] {
+  display: none; }
+.modal .modal-trigger, .modal .modal-trigger:hover, .modal .learn-more {
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 7px 18px;
+  text-decoration: none;
+  background-clip: padding-box;
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 7px 18px;
+  text-decoration: none;
+  background-clip: padding-box;
+  min-width: 140px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 0.8em 1em;
+  margin: 20px;
+  font-weight: 200;
+  color: #333; }
+  .modal .modal-trigger:hover:not(:disabled), .modal .learn-more:hover:not(:disabled) {
+    background-color: white;
+    cursor: pointer; }
+  .modal .modal-trigger:active:not(:disabled), .modal .learn-more:active:not(:disabled), .modal .modal-trigger:focus:not(:disabled), .modal .learn-more:focus:not(:disabled) {
+    background-color: #f2f2f2;
+    cursor: pointer; }
+  .modal .modal-trigger:hover:not(:disabled), .modal .learn-more:hover:not(:disabled) {
+    background-color: white;
+    cursor: pointer; }
+  .modal .modal-trigger:active:not(:disabled), .modal .learn-more:active:not(:disabled), .modal .modal-trigger:focus:not(:disabled), .modal .learn-more:focus:not(:disabled) {
+    background-color: #f2f2f2;
+    cursor: pointer; }
+  .modal .modal-trigger:disabled, .modal .learn-more:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+  .modal .modal-trigger:hover, .modal .learn-more:hover {
+    background-color: transparent;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 7px 18px;
+    text-decoration: none;
+    background-clip: padding-box;
+    background-color: transparent;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 7px 18px;
+    text-decoration: none;
+    background-clip: padding-box;
+    color: white; }
+    .modal .modal-trigger:hover:hover:not(:disabled), .modal .learn-more:hover:hover:not(:disabled) {
+      background-color: rgba(13, 13, 13, 0);
+      cursor: pointer; }
+    .modal .modal-trigger:hover:active:not(:disabled), .modal .learn-more:hover:active:not(:disabled), .modal .modal-trigger:hover:focus:not(:disabled), .modal .learn-more:hover:focus:not(:disabled) {
+      background-color: transparent;
+      cursor: pointer; }
+    .modal .modal-trigger:hover:hover:not(:disabled), .modal .learn-more:hover:hover:not(:disabled) {
+      background-color: rgba(13, 12, 12, 0);
+      cursor: pointer; }
+    .modal .modal-trigger:hover:active:not(:disabled), .modal .learn-more:hover:active:not(:disabled), .modal .modal-trigger:hover:focus:not(:disabled), .modal .learn-more:hover:focus:not(:disabled) {
+      background-color: transparent;
+      cursor: pointer; }
+    .modal .modal-trigger:hover:disabled, .modal .learn-more:hover:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+.modal .learn-more {
+  background-color: transparent;
+  color: #333; }
+  .modal .learn-more:hover {
+    background-color: white;
+    color: #333; }
+.modal .modal-open {
+  overflow: hidden; }
+.modal .modal-window {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  visibility: hidden;
+  z-index: 99999999999; }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-window {
+      padding-top: 10em; } }
+  .modal .modal-window .modal-bg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer; }
+.modal .modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: white;
+  cursor: pointer; }
+  .modal .modal-close:after, .modal .modal-close:before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 1.5em;
+    width: 0.15em;
+    background: #DDD;
+    content: '';
+    margin: -3px 0 0 -1px; }
+  .modal .modal-close:hover:after, .modal .modal-close:hover:before {
+    background: #c4c4c4; }
+  .modal .modal-close:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+.modal .modal-inner {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  background: white;
+  border-radius: 3px;
+  margin-top: 0;
+  margin: auto;
+  max-height: 95%;
+  overflow: auto;
+  padding: 1.5em;
+  position: relative;
+  width: 95%; }
+  @media screen and (min-width: 40em) {
+    .modal .modal-inner {
+      max-height: 70%;
+      padding: 3em;
+      width: 60%; } }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-inner {
+      width: 50%; } }
+  .modal .modal-inner h1 {
+    color: #333;
+    margin-bottom: 0.6em;
+    text-align: left;
+    text-transform: capitalize; }
+  .modal .modal-inner .modal-intro {
+    font-weight: 800; }
+  .modal .modal-inner .modal-content {
+    color: #333; }
+  .modal .modal-inner a.cta {
+    color: white;
+    margin-right: 0.5em;
+    margin-top: 1em; }
+    .modal .modal-inner a.cta:last-child {
+      padding: 0 2em; }
+.modal .modal-state:checked + .modal-window {
+  opacity: 1;
+  visibility: visible; }
+.modal .modal-state:checked + .modal-window .modal-inner {
+  top: 0.5em; }
+
 .footer {
   display: -webkit-box;
   display: -moz-box;
